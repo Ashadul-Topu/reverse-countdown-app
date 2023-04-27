@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            /* background-image: linear-gradient(90deg, rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url(./pexels-josh-sorenson-1714208.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: scale-down; */
+        }
+        section{
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2), -10px -10px 5px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            /* color: #fff; */
+            background-color: rgba(225, 225, 225, 0.9);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 42px;
+            font-weight: normal;
+            line-height: 52px;
+        }
+        .countdown{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #set-time{
+            margin: 10px auto;
+            font-size: 22px;
+            line-height: 26px;
+            color: #00000099;
+        }
+        input{
+            width: 100%;
+            border: none;
+            text-align: center;
+            font-size: 32px;
+            /* background-color: transparent; */
+            border-radius: 8px;
+            padding: 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Making a countdown clock</h1> -->
+    
+    <section class="countdown-body">
+        <h1>we are coming soon</h1>
+        <p id="set-time"></p>
+        <div class="countdown">
+            <div class="days"><input type="text" readonly value="0"></input> <span>days</span></div>
+            <div class="hours"><input type="text" readonly value="0"></input> <span>Hours</span></div>
+            <div class="min"><input type="text" readonly value="0"></input> <span>minutes</span></div>
+            <div class="sec"><input type="text" readonly value="0"></input> <span>seconds</span></div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
